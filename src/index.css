@@ -20,9 +20,39 @@ code {
 .container{
   display: flex;
 }
-.sidebarone{
+.sidebar{
   background-color: white;
   flex:1;
+  position: sticky;
+  top: 50px;
+}
+.sidebar-wrapper{
+  padding: 20px;
+}
+.sidebar-menu{
+  margin-bottom: 10px;
+}
+.sidebar-title{
+  font-size: 11px;
+  color: blue;
+}
+.sidebar-list{
+  list-style: none;
+  padding: 5px;
+}
+.sidebar-list-item{
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.sidebar-list-item.active,.sidebar-list-item:hover{
+background-color: lightpink;
+}
+.icon-item{
+  font-size: 5px !important;
+
 }
 .other{
   background-color: aqua;
