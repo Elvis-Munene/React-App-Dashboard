@@ -1,6 +1,7 @@
 import Topbar from "./components/top-navigation/Topbar";
 import Sidebar from "./components/side-bar/Sidebar";
 import { useState, useEffect } from "react";
+import Education from "../src/components/homepage/Education"
 
 function App() {
   const [chartdata, setChartData] = useState();
@@ -44,7 +45,9 @@ function App() {
       <Topbar />
       <div className="container">
         <Sidebar />
-        <div className="other">other pages</div>
+        <div className="other">
+          <Education plotData={chartdata}/>
+        </div>
       </div>
     </div>
   );

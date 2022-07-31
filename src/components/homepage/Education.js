@@ -1,8 +1,17 @@
 import React from 'react'
-import {}
+import {Doughnut} from "react-chartjs-2"
 
-export default function Education() {
-  return (
-    <div></div>
-  )
+function Education({plotData}) {
+    console.log(plotData);
+    return (
+
+        <div className='dona'>
+            <h1>Donoughtchart</h1>
+            <Doughnut data={plotData}/>
+        </div>
+    )
+
+
 }
+
+export default Education;
