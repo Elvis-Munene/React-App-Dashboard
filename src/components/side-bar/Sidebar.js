@@ -1,6 +1,6 @@
 import React from "react";
 import {FaHome,FaChartLine,FaDatabase} from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+
 
 export default function Sidebar() {
   return (

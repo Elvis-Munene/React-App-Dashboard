@@ -1,7 +1,6 @@
 import Topbar from "./components/top-navigation/Topbar";
 import Sidebar from "./components/side-bar/Sidebar";
 import { useState, useEffect } from "react";
-import {Route,Routes} from "react-router-dom"
 import Analysis from "./components/homepage/Analyticspage/Analysis";
 import SubmissionForm from "./components/homepage/Analyticspage/SubmissionForm";
 import Home from "./components/homepage/Home";

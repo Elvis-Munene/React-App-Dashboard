@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 function SubmissionForm() {
   const[year,setYear] = useState("")
-  const[education,setEducation] = useState("")
-  const[health,setHealth] = useState("")
-  const[food,setFood] = useState("")
+  const[Education,setEducation] = useState("")
+  const[Health,setHealth] = useState("")
+  const[Food,setFood] = useState("")
   const[clothing,setClothing] = useState("")
 
 function HandleYear(event) {
@@ -31,10 +31,10 @@ function HandleSubmit(event) {
   event.preventDefault();
   const data ={
     year:year,
-    education:education,
-    health:health,
+    Education:Education,
+    Health:Health,
     clothing:clothing,
-    food:food,
+    Food:Food,
   }
   fetch("https://safe-journey-19911.herokuapp.com/data",{
     method:"POST",
