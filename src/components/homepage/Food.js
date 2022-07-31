@@ -1,11 +1,11 @@
 import React from 'react'
 import {Doughnut} from "react-chartjs-2"
 
-function Education({plotData}) {
+function Food({plotData}) {
     return (
 
         <div className='dona'>
-            <h1>Education</h1>
+            <h1>Food</h1>
             <Doughnut data={plotData}/>
         </div>
     )
@@ -13,4 +13,4 @@ function Education({plotData}) {
 
 }
 
-export default Education;
+export default Food;

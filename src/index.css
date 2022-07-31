@@ -61,4 +61,45 @@ background-color: lightpink;
   background-color: aqua;
   flex: 4;
   display: flex;
+  margin: 20px;
+  
+}
+.Doncontainer{
+  height: fit-content;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+}
+.Healthcontainer{
+  height: fit-content;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+margin-left: 10px;
+}
+.clothingcontainer{
+  height: fit-content;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+margin-left: 10px;
+}
+.foodcontainer{
+  height: fit-content;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 16px 14px 6px 0px rgba(0,0,0,0.75);
+margin-left: 10px;
 }
