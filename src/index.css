@@ -49,9 +49,11 @@ code {
   display: flex;
   align-items: center;
   border-radius: 10px;
+  list-style: none;
 }
 .sidebar-list-item.active,.sidebar-list-item:hover{
 background-color: lightpink;
+list-style: none;
 }
 .home{
   background-color: aqua;

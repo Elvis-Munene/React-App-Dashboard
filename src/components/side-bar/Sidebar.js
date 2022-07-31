@@ -8,18 +8,18 @@ export default function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Dashboard</h3>
           <ul className="sidebar-list">
-            <li className="sidebar-list-item">
+            <a href="/" className="sidebar-list-item">
              <FaHome />
               Home
-            </li>
-            <li className="sidebar-list-item">
+            </a>
+            <a href="/Analytics" className="sidebar-list-item">
             <FaChartLine/>
               Analytics
-            </li>
-            <li className="sidebar-list-item">
+            </a>
+            <a href="/SubmissionForm" className="sidebar-list-item">
             <FaDatabase/>
             Add Data
-            </li>
+            </a>
           </ul>
         </div>
       </div>
