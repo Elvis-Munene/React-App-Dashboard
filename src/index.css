@@ -53,13 +53,15 @@ code {
 .sidebar-list-item.active,.sidebar-list-item:hover{
 background-color: lightpink;
 }
-.other{
+.home{
   background-color: aqua;
   flex: 4;
-  display: flex;
   margin: 20px;
   height: fit-content;
   
+}
+.charts{
+  display: flex;
 }
 .Doncontainer{
   height: fit-content;
