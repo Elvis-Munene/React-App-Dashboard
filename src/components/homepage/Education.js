@@ -6,7 +6,7 @@ function Education({plotData}) {
     return (
 
         <div className='dona'>
-            <h1>Donoughtchart</h1>
+            <h1>Education</h1>
             <Doughnut data={plotData}/>
         </div>
     )

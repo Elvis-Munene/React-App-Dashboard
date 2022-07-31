@@ -60,4 +60,5 @@ background-color: lightpink;
 .other{
   background-color: aqua;
   flex: 4;
+  display: flex;
 }

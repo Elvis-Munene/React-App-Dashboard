@@ -46,7 +46,8 @@ function App() {
       <div className="container">
         <Sidebar />
         <div className="other">
-          <Education plotData={chartdata}/>
+          <div className="Doncontainer" style={{width:300}}>
+          <Education plotData={chartdata}/></div>
         </div>
       </div>
     </div>
