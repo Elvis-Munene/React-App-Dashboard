@@ -1,12 +1,10 @@
 import Topbar from "./components/top-navigation/Topbar";
 import Sidebar from "./components/side-bar/Sidebar";
 import { useState, useEffect } from "react";
-import Education from "../src/components/homepage/Education";
-import Health from "../src/components/homepage/Health";
-import Clothing from "./components/homepage/Clothing";
-import Food from "../src/components/homepage/Food";
+
 import Analysis from "./components/homepage/Analyticspage/Analysis";
 import SubmissionForm from "./components/homepage/Analyticspage/SubmissionForm";
+import Home from "./components/homepage/Home";
 
 function App() {
   const [chartdata, setChartData] = useState();
@@ -194,20 +192,7 @@ function App() {
       <div className="container">
         <Sidebar />
         <div className="home">
-          <div className="charts">
-            <div className="Doncontainer" style={{ width: 200 }}>
-              <Education plotData={chartdata} />
-            </div>
-            <div className="Healthcontainer" style={{ width: 200 }}>
-              <Health plotData={healthData} />
-            </div>
-            <div className="clothingcontainer" style={{ width: 200 }}>
-              <Clothing plotData={clothingData} />
-            </div>
-            <div className="foodcontainer" style={{ width: 200 }}>
-              <Food plotData={foodData} />
-            </div>
-          </div>
+          <Home plotData1={chartdata} plotData2={healthData}  plotData3={clothingData} plotData4={foodData} />
           <div className="Analysis">
           <Analysis plotData={analyze} style={{ width:700}}/>
           </div>
