@@ -1,44 +1,60 @@
 {
   "data": [
     {
-        "id":1,
-        "year":2005,
-        "Education":99000,
-        "Health":56000,
-        "clothing":15000,
-        "Food":57000
+      "id": 1,
+      "year": 2005,
+      "Education": 99000,
+      "Health": 56000,
+      "clothing": 15000,
+      "Food": 57000
     },
     {
-      "id":2,
-      "year":2006,
-      "Education":72000,
-      "Health":45000,
-      "clothing":12000,
-      "Food":59000
-  },
-  {
-      "id":3,
-      "year":2007,
-      "Education":93000,
-      "Health":50000,
-      "clothing":30000,
-      "Food":56000
-  },
-  {
-      "id":4,
-      "year":2008,
-      "Education":52000,
-      "Health":16000,
-      "clothing":10000,
-      "Food":41000
-  },
-  {
-      "id":5,
-      "year":2009,
-      "Education":65000,
-      "Health":19000,
-      "clothing":31000,
-      "Food":45000
-  } 
-    ]
+      "id": 2,
+      "year": 2006,
+      "Education": 72000,
+      "Health": 45000,
+      "clothing": 12000,
+      "Food": 59000
+    },
+    {
+      "id": 3,
+      "year": 2007,
+      "Education": 93000,
+      "Health": 50000,
+      "clothing": 30000,
+      "Food": 56000
+    },
+    {
+      "id": 4,
+      "year": 2008,
+      "Education": 52000,
+      "Health": 16000,
+      "clothing": 10000,
+      "Food": 41000
+    },
+    {
+      "id": 5,
+      "year": 2009,
+      "Education": 65000,
+      "Health": 19000,
+      "clothing": 31000,
+      "Food": 45000
+    },
+    {
+      "year": 2010,
+      "education": 50000,
+      "health": 50000,
+      "clothing": 50000,
+      "food": 50000,
+      "id": 6
+    },
+    {
+      "year": 2011,
+      "education": 80,
+      "health": 70,
+      "clothing": 50,
+      "food": 60000,
+      "id": 7
+    }
+  ]
 }

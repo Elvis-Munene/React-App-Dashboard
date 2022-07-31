@@ -1,46 +1,73 @@
 import React, { useState } from "react";
 
-export default function SubmissionForm(props) {
-  const [formData, setFormData] = useState({
-    year:"",
-    education: "",
-    health: "",
-    clothing: "",
-    expenditure: "",
-    correctindex: 0,
-  });
-  function handleChange(event) {
-    setFormData({
-      ...formData,
-      value: event.target.value,
-    });
-  }
+function SubmissionForm() {
+  const[year,setYear] = useState("")
+  const[education,setEducation] = useState("")
+  const[health,setHealth] = useState("")
+  const[food,setFood] = useState("")
+  const[clothing,setClothing] = useState("")
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log(formData);
+function HandleYear(event) {
+  setYear(parseInt(event.target.value));
+}
+
+function HandleEducation(event) {
+  setEducation(parseInt(event.target.value));
+}
+
+function HandleHealth(event) {
+
+  setHealth(parseInt(event.target.value));
+}
+function HandleClothing(event) {
+
+  setClothing(parseInt(event.target.value));
+}
+function HandleFood(event) {
+
+  setFood(parseInt(event.target.value));
+}
+function HandleSubmit(event) {
+  event.preventDefault();
+  const data ={
+    year:year,
+    education:education,
+    health:health,
+    clothing:clothing,
+    food:food,
   }
+  fetch("https://safe-journey-19911.herokuapp.com/data",{
+    method:"POST",
+    headers:{ 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  })
+console.log(data);
+};
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={HandleSubmit}>
       <label>Year:
-          <input type="text" name="Year" placeHolder="year" value={formData.year} onChange={handleChange}/>
+          <input type="text" name="Year" placeHolder="year" onChange={HandleYear}/>
         </label>
         <label>Education:
-          <input type="text" name="Education Expenditure" placeHolder="Education" value={formData.education} onChange={handleChange}/>
+          <input type="text" name="Education Expenditure" placeHolder="Education" onChange={HandleEducation}/>
         </label>
         <label>Health:
-          <input type="text" name="Health Expenditure" placeHolder="Health" value={formData.health} onChange={handleChange}/>
+          <input type="text" name="Health Expenditure" placeHolder="Health" onChange={HandleHealth}/>
         </label>
         <label>Clothing:
-          <input type="text" name="Clothing Expenditure" placeHolder="Clothing" value={formData.clothing} onChange={handleChange}/>
+          <input type="text" name="Clothing Expenditure" placeHolder="Clothing" onChange={HandleClothing}/>
         </label>
         <label>Food:
-          <input type="text" name="Food Expenditure" placeHolder="Food" value={formData.food} onChange={handleChange}/>
+          <input type="text" name="Food Expenditure" placeHolder="Food" onChange={HandleFood}/>
         </label>
         <button type="submit">submit</button>
       </form>
     </div>
-  );
+  )
+
 }
+
+
+export default SubmissionForm;

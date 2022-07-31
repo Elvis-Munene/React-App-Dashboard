@@ -1,7 +1,7 @@
 import Topbar from "./components/top-navigation/Topbar";
 import Sidebar from "./components/side-bar/Sidebar";
 import { useState, useEffect } from "react";
-
+import {Route,Routes} from "react-router-dom"
 import Analysis from "./components/homepage/Analyticspage/Analysis";
 import SubmissionForm from "./components/homepage/Analyticspage/SubmissionForm";
 import Home from "./components/homepage/Home";
@@ -15,7 +15,7 @@ function App() {
   
 
   useEffect(() => {
-    fetch("http://localhost:3000/data")
+    fetch("https://safe-journey-19911.herokuapp.com/data")
       .then((response) => response.json())
       .then((data) =>
         setChartData({
@@ -48,7 +48,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3000/data")
+    fetch("https://safe-journey-19911.herokuapp.com/data")
       .then((response) => response.json())
       .then((data) =>
         setHealthData({
@@ -81,7 +81,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3000/data")
+    fetch("https://safe-journey-19911.herokuapp.com/data")
       .then((response) => response.json())
       .then((data) =>
         setclothingData({
@@ -113,7 +113,7 @@ function App() {
       );
   }, []);
   useEffect(() => {
-    fetch("http://localhost:3000/data")
+    fetch("https://safe-journey-19911.herokuapp.com/data")
       .then((response) => response.json())
       .then((data) =>
         setfoodData({
@@ -146,7 +146,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3000/data")
+    fetch("https://safe-journey-19911.herokuapp.com/data")
       .then((response) => response.json())
       .then((data) =>
         setAnalyze({
@@ -189,6 +189,7 @@ function App() {
   return (
     <div className="App">
       <Topbar />
+      
       <div className="container">
         <Sidebar />
         <div className="home">
