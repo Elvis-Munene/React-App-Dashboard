@@ -6,6 +6,7 @@ import Health from "../src/components/homepage/Health";
 import Clothing from "./components/homepage/Clothing";
 import Food from "../src/components/homepage/Food";
 import Analysis from "./components/homepage/Analyticspage/Analysis";
+import SubmissionForm from "./components/homepage/Analyticspage/SubmissionForm";
 
 function App() {
   const [chartdata, setChartData] = useState();
@@ -209,6 +210,9 @@ function App() {
           </div>
           <div className="Analysis">
           <Analysis plotData={analyze} style={{ width:700}}/>
+          </div>
+          <div className="forms">
+            <SubmissionForm/>
           </div>
           
         </div>

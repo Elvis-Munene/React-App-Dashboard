@@ -8,7 +8,7 @@ export default function SubmissionForm() {
     <div>
         <form >
             <div>
-                <input type="text" name='Education Expenditure'/>
+                <input  type="text" name='Education Expenditure'/>
             </div>
             <div>
                 <input type="text" name='Health Expenditure'/>

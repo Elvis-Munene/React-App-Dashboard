@@ -1,5 +1,5 @@
 import React from "react";
-import {FaHome,FaChartLine,FaUser} from "react-icons/fa";
+import {FaHome,FaChartLine,FaDatabase} from "react-icons/fa";
 
 export default function Sidebar() {
   return (
@@ -17,8 +17,8 @@ export default function Sidebar() {
               Analytics
             </li>
             <li className="sidebar-list-item">
-            <FaUser/>
-            Users
+            <FaDatabase/>
+            Add Data
             </li>
           </ul>
         </div>
