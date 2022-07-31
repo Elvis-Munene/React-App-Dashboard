@@ -53,15 +53,12 @@ code {
 .sidebar-list-item.active,.sidebar-list-item:hover{
 background-color: lightpink;
 }
-.icon-item{
-  font-size: 5px !important;
-
-}
 .other{
   background-color: aqua;
   flex: 4;
   display: flex;
   margin: 20px;
+  height: fit-content;
   
 }
 .Doncontainer{
