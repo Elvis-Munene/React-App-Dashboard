@@ -13,6 +13,7 @@ function App() {
   const [clothingData, setclothingData] = useState();
   const [foodData, setfoodData] = useState();
   const [analyze, setAnalyze] = useState();
+  
 
   useEffect(() => {
     fetch("http://localhost:3000/data")
