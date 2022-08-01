@@ -6,7 +6,7 @@ import Food from "./Food";
 
 export default function Home({plotData1, plotData2, plotData3, plotData4}) {
   return (
-    <div className="charts">
+    <div name="home" className="charts">
     <div className="Doncontainer" style={{ width: 200 }}>
       <Education  plotData={plotData1}/>
     </div>

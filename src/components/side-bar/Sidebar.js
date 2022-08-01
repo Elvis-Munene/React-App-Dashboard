@@ -1,5 +1,6 @@
 import React from "react";
 import {FaHome,FaChartLine,FaDatabase} from "react-icons/fa";
+import {Link} from 'react-scroll';;
 
 
 export default function Sidebar() {
@@ -9,18 +10,18 @@ export default function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Dashboard</h3>
           <ul className="sidebar-list">
-            <a href="/" className="sidebar-list-item">
+            <Link   to="home" className="sidebar-list-item">
              <FaHome />
               Home
-            </a>
-            <a href="/Analytics" className="sidebar-list-item">
+            </Link>
+            <Link to="analytics" className="sidebar-list-item">
             <FaChartLine/>
               Analytics
-            </a>
-            <a href="/SubmissionForm" className="sidebar-list-item">
+            </Link>
+            <Link to="submission" className="sidebar-list-item">
             <FaDatabase/>
             Add Data
-            </a>
+            </Link>
           </ul>
         </div>
       </div>
