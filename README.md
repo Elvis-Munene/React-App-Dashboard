@@ -12,7 +12,7 @@ https://safe-journey-19911.herokuapp.com/data
 * Installation of dependancies.
 * Server.
 ## Known Bugs
-Not fully deployed yet.
+You need to refresh the page upon submitting data in the form section.
 ## Technologies Used
 *HTML
 *CSS
